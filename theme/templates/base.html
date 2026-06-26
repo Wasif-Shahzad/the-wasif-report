@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
   <head>
-    
-  </head>
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Wasif Shahzad">
 
+    <link rel="stylesheet" href="/theme/style.css">
+  </head>
   <body>
-    
+    <div class="parent-container">
+      <div class="title-container">
+        HERE
+      </div>
+      <div class="content-container">
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </div>
   </body>
 </html>
