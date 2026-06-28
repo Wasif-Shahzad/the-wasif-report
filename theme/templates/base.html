@@ -5,17 +5,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Wasif Shahzad">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/theme/style.css">
   </head>
   <body>
     <div class="parent-container">
+      <nav class="mobile">
+        <span class="active">Home</span>
+        <span>Articles</span>
+        <span>About</span>
+      </nav>
       <div class="title-container">
-        HERE
+        <nav class="desktop">
+          <span class="active">Home</span>
+          <span>Articles</span>
+          <span>About</span>
+        </nav>
+        hello
       </div>
       <div class="content-container">
-        {% block content %}
-        {% endblock content %}
+        <div class="main-content-container">
+          {% block content %}
+          {% endblock content %}
+        </div>
+        <div class="shape-divider">
+            <svg viewBox="0 0 800 126" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <!-- Green background block to match article -->
+                <rect width="800" height="126" fill="#5F6D3B"/>
+                <!-- Beige cloud path to match footer -->
+                <path d="M34.5716 62.5412H0V126H800V93.3642C784.231 88.227 749.841 77.9528 738.438 77.9528C724.185 77.9528 690.22 33.834 676.573 33.834C662.927 33.834 575.284 14.4942 566.793 9.65926C558.302 4.82432 507.961 62.5412 494.314 62.5412C480.667 62.5412 464.594 71.3047 457.923 67.3764C451.251 63.448 400.91 77.0462 368.158 77.9528C335.406 78.8593 339.348 51.0584 309.325 48.3388C279.303 45.6191 235.936 3.9175 215.921 0.291295C195.906 -3.33491 127.976 28.0922 118.575 28.0922C109.174 28.0922 82.79 28.9988 73.9955 28.0922C65.2009 27.1857 39.4238 62.5412 34.5716 62.5412Z" fill="#F9F1E2"/>
+            </svg>
+        </div>
+        <div class="curtain-footer">
+          Footer
+        </div>
       </div>
     </div>
   </body>
