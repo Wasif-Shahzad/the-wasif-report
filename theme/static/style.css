@@ -48,6 +48,7 @@ html, body {
     text-align: center;
     word-break: break-word;
     margin-bottom: 0.625rem;
+    margin-top: 0;
 }
 
 .title-container .main-title img {
