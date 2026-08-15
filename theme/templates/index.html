@@ -1,7 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="top-container">
-    <p class="scroll-antimation">Hi</p>
+    <div class="featured-article-outer-container">
+        <div class="featured-article-container-main-page">
+            {% set main_page_article = (articles | selectattr('featured', 'eq', 'True') | first) %}
+            <div class="featured-article-thumbnail">
+                {% set thumbnail = main_page_article.cover %}
+                {% if not thumbnail %}
+                    {% set thumbnail = "images/default-cover.png" %}
+                {% endif %}
+                <img src="{{ SITEURL }}/{{ thumbnail }}" alt="Thumbnail">
+            </div>
+            <p>Featured article</p>
+            <p class="main-page-featured-article-title">
+                {{ main_page_article.title }}
+            </p>
+        </div>
+    </div>
 </div>
 <div class="middle-container">
     <p class="scroll-animation">Hello</p>

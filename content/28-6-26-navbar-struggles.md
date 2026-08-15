@@ -1,9 +1,11 @@
-Title: My struggles with stacking context for responsive navbar positioning
+Title: Navbar struggles
 Date: 2026-06-27 11:47
 Category: CSS
 Tags: Frontend, Web-dev, css
 Authors: Wasif Shahzad
 Summary: Telling how I struggled with stacking contexts and how I fixed my navbar positioning.
+Slug: struggling-with-stacking-contexts-in-navbar
+Features: False
 
 If you open the [design](https://sable-boil-40643239.figma.site/) which I am using to create this site on phone, you will notice that the navbar sticks on top of the screen. This is done through *absolute* positioning in CSS. You add `position: absolute;` to the styles and then define its positioning using the four CSS attributes `top`, `left`, `right`, and `bottom`. 
 
