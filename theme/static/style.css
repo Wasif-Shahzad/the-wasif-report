@@ -119,13 +119,17 @@ html, body {
 }
 
 .middle-container {
-    height: 130dvh;
+    min-height: 130dvh;
     position: sticky;
     background-color: #5f6d3b;
+    color: #E9F9B2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 80px 20px;
+    gap: 40px;
 }
 
 .shape-divider {
@@ -141,6 +145,12 @@ html, body {
     justify-content: center;
     align-items: center;
     color: rgb(51, 33, 21);
+    /*position: relative;*/
+}
+
+.curtain-footer:before {
+    content: "";
+    margin-bottom: auto;
 }
 
 .curtain-footer p {
@@ -149,6 +159,8 @@ html, body {
     font-family: "Plus Jakarta Sans", sans-serif;
     letter-spacing: -0.2304px;
     line-height: 26.8px;
+    margin-top: auto;
+    margin-bottom: 30px;
 }
 
 .curtain-footer h1 {
@@ -234,6 +246,12 @@ html, body {
 .scroll-animation {
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
 }
 
 .scroll-animation.is-visible {
@@ -296,6 +314,73 @@ html, body {
     height: 100%;
     object-fit: cover;
     border-radius: 24px
+}
+
+.middle-container .scroll-animation .heading {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -0.512px;
+    width: 100%;
+    text-align: center;
+}
+
+.middle-container .scroll-animation .latest-articles {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-container .scroll-animation .latest-articles h3 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.middle-container .scroll-animation .latest-articles h4 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.middle-container .scroll-animation .latest-articles .article-content h4 {
+    margin-top: 10px;
+}
+
+.middle-container .scroll-animation .latest-articles .article-title .bottom-content {
+    display: flex;
+    gap: 20px;
+}
+
+.middle-container .scroll-animation .latest-articles .article-title .bottom-content a {
+    color: inherit;
+    font-weight: 500;
+}
+
+.middle-container .scroll-animation .article-title {
+    border-bottom: 2px dashed #E9F9B2;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.middle-container .scroll-animation .article-title .index {
+    font-family: "Xanh Mono", sans-serif;
+    font-size: 104px;
+    font-weight: 400;
+}
+
+.middle-container .scroll-animation .article-title .article-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-container .scroll-animation .article-title:first-of-type {
+    border-top: 2px dashed #E9F9B2;
+}
+
+.middle-container .scroll-animation #read-more {
+    color: inherit;
+    text-align: center;
+    font-weight: 500;
 }
 
 @media (max-width: 1265px) {
