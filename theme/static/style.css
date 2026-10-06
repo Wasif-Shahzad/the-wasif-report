@@ -392,6 +392,7 @@ html, body {
 }
 
 .articles-section {
+    box-sizing: border-box;
     background-color: rgb(0, 83, 212);
     color: #e9f9b2;
     font-family: 'Plus Jakarta Sans', sans-serif;
