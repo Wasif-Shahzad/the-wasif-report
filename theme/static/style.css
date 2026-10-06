@@ -388,11 +388,11 @@ html, body {
 .articles-image {
     width: 100%;
     aspect-ratio: 800 / 680;
-    background-color: rgb(0, 83, 212);
+    background-color: #5f6d3b;
 }
 
 .articles-section {
-    background-color: #5f6d3b;
+    background-color: rgb(0, 83, 212);
     color: #e9f9b2;
     font-family: 'Plus Jakarta Sans', sans-serif;
     display: flex;
