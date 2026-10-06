@@ -413,15 +413,19 @@ html, body {
 
 .articles-section .articles-grid {
     width: 100%;
-    max-width: 760px;
+    max-width: 708px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 344px));
+    justify-content: center;
     gap: 20px;
 }
 
 .articles-section .article-card {
-    height: 460px;
+    width: 100%;
+    max-width: 344px;
+    height: 400px;
+    margin: 0 auto;
     background-color: #ffffff;
     color: #332115;
     text-decoration: none;
@@ -437,7 +441,7 @@ html, body {
 
 .articles-section .article-card-thumbnail {
     flex-shrink: 0;
-    height: 270px;
+    height: 200px;
     margin: 10px 10px 0;
     border-radius: 24px;
     overflow: hidden;
@@ -454,9 +458,7 @@ html, body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 12px;
     padding: 0 24px;
     text-align: center;
 }
@@ -467,7 +469,7 @@ html, body {
     font-weight: 400;
     letter-spacing: -0.0512px;
     line-height: 1.2;
-    margin: 0;
+    margin: auto 0 0.4rem;
 }
 
 .articles-section .article-card-title {
@@ -475,7 +477,7 @@ html, body {
     font-weight: 600;
     letter-spacing: -0.2304px;
     line-height: 1.2;
-    margin: 0;
+    margin: 0 0 4rem;
 }
 
 .articles-section .articles-view-all {

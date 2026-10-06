@@ -35,3 +35,5 @@ DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 THEME = 'theme'
+
+DIRECT_TEMPLATES = ['index', 'articles', 'archives', 'tags', 'categories', 'authors']
