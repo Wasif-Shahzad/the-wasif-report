@@ -205,9 +205,9 @@ html, body {
 
 .title-container nav.desktop a {
     font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
     color: rgb(117, 111, 108);
     cursor: pointer;
-    text-decoration: none;
     font-size: 14px;
     font-weight: 600;
 }
@@ -234,9 +234,9 @@ html, body {
 
 .parent-container nav.mobile a {
     font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
     color: rgb(117, 111, 108);
     cursor: pointer;
-    text-decoration: none;
     font-size: 14px;
     font-weight: 600;
 }
@@ -383,6 +383,116 @@ html, body {
     color: inherit;
     text-align: center;
     font-weight: 500;
+}
+
+.articles-section {
+    background-color: #f9f1e2;
+    color: #332115;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 20px;
+}
+
+.articles-section .articles-heading {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1.152px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+}
+
+.articles-section .articles-grid {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.articles-section .article-card {
+    height: 460px;
+    background-color: #ffffff;
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    transition: transform 0.3s ease-out;
+}
+
+.articles-section .article-card:hover {
+    transform: scale(1.03);
+}
+
+.articles-section .article-card-thumbnail {
+    flex-shrink: 0;
+    height: 270px;
+    margin: 10px 10px 0;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.articles-section .article-card-thumbnail img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.articles-section .article-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.articles-section .article-card-date {
+    color: #756f6c;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.0512px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.articles-section .article-card-title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.2304px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.articles-section .articles-view-all {
+    color: #332115;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.articles-middle-image {
+    width: 100%;
+    aspect-ratio: 800 / 680;
+    background-color: rgb(0, 83, 212);
+}
+
+@media (max-width: 800px) {
+    .articles-section .articles-heading {
+        font-size: 32px;
+        letter-spacing: -0.512px;
+    }
+
+    .articles-section .articles-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
 
 @media (max-width: 1265px) {

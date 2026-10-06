@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME|striptags }} - Articles{% endblock %}
+
+{% block content %}
+{% set latest_articles = articles|sort(attribute='date', reverse=True) %}
+<div class="articles-section scroll-animation">
+    <h1 class="articles-heading">All articles</h1>
+    <div class="articles-grid">
+        {% for latest_article in latest_articles[:6] %}
+            {% set thumbnail = latest_article.cover %}
+            {% if not thumbnail %}
+                {% set thumbnail = "images/default-cover.png" %}
+            {% endif %}
+            <a class="article-card" href="{{ SITEURL }}/{{ latest_article.url }}">
+                <div class="article-card-thumbnail">
+                    <img src="{{ SITEURL }}/{{ thumbnail }}" alt="{{ latest_article.title }}">
+                </div>
+                <div class="article-card-body">
+                    <p class="article-card-date">{{ latest_article.date|strftime('%d %B %Y') }}</p>
+                    <h3 class="article-card-title">{{ latest_article.title }}</h3>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+    <a class="articles-view-all" href="{{ SITEURL }}/archives.html">View all articles</a>
+</div>
+<div class="articles-middle-image"></div>
+{% endblock content %}
