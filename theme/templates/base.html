@@ -15,17 +15,18 @@
     <link rel="stylesheet" href="/theme/style.css">
   </head>
   <body>
+    {% set current_page = page_name|default('') %}
     <div class="parent-container">
       <nav class="mobile">
-        <span class="active">Home</span>
-        <span>Articles</span>
-        <span>About</span>
+        <a class="{% if current_page == 'index' %}active{% endif %}" href="{{ SITEURL }}/">Home</a>
+        <a class="{% if current_page == 'articles' %}active{% endif %}" href="{{ SITEURL }}/articles.html">Articles</a>
+        <a href="#">About</a>
       </nav>
       <div class="title-container">
         <nav class="desktop">
-          <span class="active">Home</span>
-          <span>Articles</span>
-          <span>About</span>
+          <a class="{% if current_page == 'index' %}active{% endif %}" href="{{ SITEURL }}/">Home</a>
+          <a class="{% if current_page == 'articles' %}active{% endif %}" href="{{ SITEURL }}/articles.html">Articles</a>
+          <a href="#">About</a>
         </nav>
         <div class="main-title">
           <p class="title">The Wasif Report</p>

@@ -203,15 +203,16 @@ html, body {
     position: relative;
 }
 
-.title-container nav.desktop span {
+.title-container nav.desktop a {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: rgb(117, 111, 108);
     cursor: pointer;
+    text-decoration: none;
     font-size: 14px;
     font-weight: 600;
 }
 
-.title-container nav.desktop span.active {
+.title-container nav.desktop a.active {
     color: rgb(51, 33, 21);
 }
 
@@ -231,15 +232,16 @@ html, body {
     z-index: 10;
 }
 
-.parent-container nav.mobile span {
+.parent-container nav.mobile a {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: rgb(117, 111, 108);
     cursor: pointer;
+    text-decoration: none;
     font-size: 14px;
     font-weight: 600;
 }
 
-.parent-container nav.mobile span.active {
+.parent-container nav.mobile a.active {
     color: rgb(51, 33, 21);
 }
 
