@@ -406,10 +406,12 @@ html, body {
 .articles-section .articles-heading {
     font-size: 48px;
     font-weight: 600;
-    letter-spacing: -1.152px;
+    letter-spacing: -1px;
     line-height: 1.2;
     text-align: center;
     margin: 0;
+    color: #c6dcff;
+    border-bottom: 3px solid #c6dcff;
 }
 
 .articles-section .articles-grid {
