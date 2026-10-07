@@ -385,6 +385,51 @@ html, body {
     font-weight: 500;
 }
 
+.cat-hello {
+    position: relative;
+    width: min(360px, 80%);
+    aspect-ratio: 280 / 186;
+}
+
+.cat-hello .cat-hello-frame {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    animation-duration: 1.6s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+}
+
+.cat-hello .cat-hello-frame-before {
+    animation-name: cat-hello-before;
+}
+
+.cat-hello .cat-hello-frame-after {
+    animation-name: cat-hello-after;
+}
+
+@keyframes cat-hello-before {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes cat-hello-after {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
 .articles-image {
     width: 100%;
     aspect-ratio: 800 / 680;
