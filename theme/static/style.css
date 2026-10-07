@@ -431,9 +431,13 @@ html, body {
 }
 
 .articles-image {
+    box-sizing: border-box;
     width: 100%;
-    aspect-ratio: 800 / 680;
     background-color: #5f6d3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
 }
 
 .articles-section {
