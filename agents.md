@@ -8,3 +8,5 @@ I will give you reference images in the /reference_images/ folder. I will only g
 I have gone artistic with my drawings so if you want some of it anytime please tell me when to do that.
 If you want to ask something sometime ask me and add it to agents.md as well.
 Make git commits for each small feature/fix/component that you add. I.E a page would be divided into multiple components and their commits.
+
+reference_images/ should stay untracked and so should session.txt.
