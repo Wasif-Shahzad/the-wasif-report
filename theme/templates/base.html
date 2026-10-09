@@ -16,16 +16,17 @@
   </head>
   <body class="{% block body_class %}{% endblock %}">
     {% set current_page = page_name|default('') %}
+    {% set articles_active = current_page == 'articles' or article is defined %}
     <div class="parent-container">
       <nav class="mobile">
         <a class="{% if current_page == 'index' %}active{% endif %}" href="{{ SITEURL }}/">Home</a>
-        <a class="{% if current_page == 'articles' %}active{% endif %}" href="{{ SITEURL }}/articles.html">Articles</a>
+        <a class="{% if articles_active %}active{% endif %}" href="{{ SITEURL }}/articles.html">Articles</a>
         <a href="#">About</a>
       </nav>
       <div class="title-container">
         <nav class="desktop">
           <a class="{% if current_page == 'index' %}active{% endif %}" href="{{ SITEURL }}/">Home</a>
-          <a class="{% if current_page == 'articles' %}active{% endif %}" href="{{ SITEURL }}/articles.html">Articles</a>
+          <a class="{% if articles_active %}active{% endif %}" href="{{ SITEURL }}/articles.html">Articles</a>
           <a href="#">About</a>
         </nav>
         <div class="main-title">
