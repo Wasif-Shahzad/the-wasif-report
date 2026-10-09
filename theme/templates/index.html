@@ -18,27 +18,5 @@
         </div>
     </div>
 </div>
-<div class="middle-container">
-    {% set latest_articles = articles|sort(attribute='date', reverse=True) %}
-    <div class="scroll-animation">
-        <div class="heading">Latest articles</div>
-        <div class="latest-articles">
-            {% for latest_article in latest_articles[:4] %}
-                <div class="article-title">
-                    <div class="index">0{{ loop.index }}</div>
-                    <div class="article-content">
-                        <h3>{{ latest_article.title }}</h3>
-                        <div class="bottom-content">
-                            <h4>{{ latest_article.date|strftime('%d %B %Y') }}</h4>
-                            <h4>|</h4>
-                            <h4><a href="{{ SITEURL }}/{{ latest_article.url }}">Read this...</a></h4>
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-        <a id="read-more" href="{{ SITEURL }}/archives.html">View all articles</a>
-        {% include 'cat-hello.html' %}
-    </div>
-</div>
+{% include 'middle.html' %}
 {% endblock content %}
