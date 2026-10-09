@@ -547,7 +547,8 @@ html, body {
 .post-cover {
     display: block;
     width: 100%;
-    height: auto;
+    aspect-ratio: 882 / 580;
+    object-fit: cover;
 }
 
 .post-header {
