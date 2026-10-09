@@ -23,7 +23,7 @@
 
 {% block content %}
   {% import 'translations.html' as translations with context %}
-  {% set fallback_covers = ['images/programmer_image.jpg', 'images/programmer-image2.jpg', 'images/programmer-image3.jpg'] %}
+  {% set fallback_covers = ['images/programmer-image2.jpg', 'images/programmer-image3.jpg', 'images/programmer-image4.jpg'] %}
   {% set post_cover = article.cover or fallback_covers|random_item %}
   <article class="post">
     <img class="post-cover" src="{{ SITEURL }}/{{ post_cover }}" alt="{{ article.title|striptags }}">

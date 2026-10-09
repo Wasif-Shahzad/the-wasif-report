@@ -11,6 +11,6 @@ Cover: images/my-image.jpg
 
 When `Cover:` is omitted, the article page picks one of these at random at build time:
 
-- `content/images/programmer_image.jpg`
 - `content/images/programmer-image2.jpg`
 - `content/images/programmer-image3.jpg`
+- `content/images/programmer-image4.jpg`
