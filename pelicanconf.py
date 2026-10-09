@@ -1,3 +1,5 @@
+import random
+
 AUTHOR = 'Wasif Shahzad'
 SITENAME = 'The Wasif Report'
 SITEURL = ""
@@ -37,3 +39,12 @@ DEFAULT_PAGINATION = 10
 THEME = 'theme'
 
 DIRECT_TEMPLATES = ['index', 'articles', 'archives', 'tags', 'categories', 'authors']
+
+
+def random_item(items):
+    return random.choice(list(items))
+
+
+JINJA_FILTERS = {
+    'random_item': random_item,
+}
