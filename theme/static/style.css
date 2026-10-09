@@ -704,7 +704,7 @@ html, body {
     }
 
     .post-header {
-        padding: 40px 0 56px;
+        padding: 84px 0 56px;
     }
 
     .post-body {
@@ -715,6 +715,10 @@ html, body {
     .post-signature {
         margin-top: 64px;
         margin-bottom: 56px;
+    }
+
+    .post-cover {
+        aspect-ratio: 519 / 319;
     }
 }
 
@@ -760,5 +764,9 @@ html, body {
 
     .title-container .title-footer {
         opacity: 0;
+    }
+
+    .article-page .title-container {
+        display: none;
     }
 }
