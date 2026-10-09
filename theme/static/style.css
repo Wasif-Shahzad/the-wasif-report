@@ -674,13 +674,13 @@ html, body {
 .post-signature {
     width: calc(100% - 40px);
     max-width: 758px;
-    margin: 84px auto 80px;
+    margin: 53px auto 80px;
     text-align: center;
 }
 
 .post-signature img {
     display: inline-block;
-    width: 140px;
+    width: 180px;
     height: auto;
 }
 
@@ -713,7 +713,7 @@ html, body {
     }
 
     .post-signature {
-        margin-top: 64px;
+        margin-top: 33px;
         margin-bottom: 56px;
     }
 
